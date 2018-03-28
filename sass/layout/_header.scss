@@ -1,0 +1,35 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(http://cdn.expertise.com/dir/courier-services.jpg);
+  background-size: cover;
+  background-position: top;
+  /* parent position */
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  &__logo-box {
+    /* child position */
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+  &__logo {
+    height: 7.5rem;
+  }
+  &__text-box {
+    /* child position */
+    /* centering */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* child text elements  centered */
+    text-align: center;
+  }
+}
